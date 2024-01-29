@@ -11,3 +11,15 @@ set number
 " Set color theme
 set background=dark
 colorscheme everforest
+
+" Required for Vundle
+set nocompatible
+filetype off
+
+" Vundle Plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()            " required
+filetype plugin indent on    " required
